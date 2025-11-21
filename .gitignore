@@ -1,0 +1,23 @@
+# VS Code
+.vscode/
+
+# Mac / Windows / Linux generierte Dateien
+.DS_Store
+Thumbs.db
+
+# Node (falls du später Tools nutzt)
+node_modules/
+
+# Logs
+logs/
+*.log
+
+# Cache
+.cache/
+dist/
+tmp/
+temp/
+
+# Backup-Dateien
+*.bak
+*.tmp
