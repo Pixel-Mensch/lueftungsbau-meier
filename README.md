@@ -1,7 +1,7 @@
-# Lüftungsbau Meier – Unternehmenswebsite
+# Lüftungsbau Meier – Unternehmenswebsite (300-€ Version)
 
-Dies ist eine moderne, statische One-Page-Unternehmenswebsite für den fiktiven Betrieb **Lüftungsbau Meier** aus Dortmund.  
-Sie wurde mit reinem HTML, CSS und minimalem JavaScript umgesetzt und dient als Demo-/Portfolio-Projekt für Pixelmensch (Marc André Kommer).
+Dies ist eine reduzierte und klar strukturierte One-Page-Website für den fiktiven Betrieb **Lüftungsbau Meier** aus Dortmund.  
+Sie wurde mit **HTML**, **CSS** und minimalem **JavaScript** umgesetzt und dient als Demo-/Portfolio-Projekt von Pixelmensch (Marc André Kommer).
 
 ---
 
@@ -9,57 +9,61 @@ Sie wurde mit reinem HTML, CSS und minimalem JavaScript umgesetzt und dient als 
 
 - **HTML5**
 - **CSS3** (mobile-first, responsive)
-- **JavaScript** (für Back-to-Top Button)
+- **JavaScript** (Navigation & Scroll-Verhalten)
 - **VS Code Live Server**
-- **Lizenzfreie Bilder** (lokal eingebunden)
+- **Lokale, lizenzfreie Bilder**
 
 ---
 
 ## 🧩 Seitenstruktur
 
-Die Seite besteht aus folgenden Sektionen:
+Diese Version enthält bewusst nur die wichtigsten Kernbereiche einer günstigen Einsteiger-Webseite:
 
-- **Hero-Bereich**
-- **Kontakt / Key-Infos**
+- **Hero**
+- **Kontakt (vereinfacht)**
 - **Leistungen**
-- **Über uns**
-- **Warum wir?**
+- **Über uns (reduziert)**
 - **Footer**
 - **Impressum**
 - **Datenschutzerklärung**
-- **Back-to-Top Button**
+
+Nicht mehr enthalten:
+
+- keine „Warum wir“-Sektion
+- keine Animationen
+- kein Design-Overhead
+- kein erweiterter Komfortbereich
+
+Dies entspricht der üblichen Struktur einer realistisch umsetzbaren **300-€-Webseite**.
 
 ---
 
 ## 📱 Responsives Design
 
-Die Seite wurde mobile-first aufgebaut und ist optimiert für:
-
-- Smartphones
-- Tablets
-- Desktop-Ansichten
+- mobile-first entwickelt
+- optimiert für Smartphones, Tablets und Desktop
+- kein externes CSS-Framework, reines Custom-CSS
 
 ---
 
 ## ⚖️ Rechtliches
 
-Enthält:
-
-- vollständig eingebautes **Impressum**
-- einfache, DSGVO-konforme **Datenschutzerklärung**
-- **keine Tracker**, **keine Cookies**, **keine externen Fonts**
+- vollständiges **Impressum**
+- einfache **Datenschutzerklärung**
+- **keine Cookies**, **keine Tracker**, **keine externen Fonts**
+- DSGVO-freundlich
 
 ---
 
 ## 🚀 Deployment
 
-Da es sich um eine statische Seite handelt, kann sie überall gehostet werden:
+Diese statische HTML-Seite kann überall gehostet werden:
 
 - GitHub Pages
-- Hetzner Webspace
+- Hetzner Webhosting
 - Netlify
 - Vercel
-- Jeder normale Webhosting-Anbieter
+- jeder normale Hosting-Anbieter
 
 ---
 
@@ -67,12 +71,16 @@ Da es sich um eine statische Seite handelt, kann sie überall gehostet werden:
 
 /css
 style.css
-/bilder
-hero.jpg
-weitere Bilder
+
+/Bilder
+    lueftung1.jpg
+    monteur.jpg
+    whatsapp.svg
+    favicon.png
+
 index.html
-.gitignore
 README.md
+.gitignore
 
 ---
 
