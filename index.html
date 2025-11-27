@@ -2,23 +2,22 @@
 <html lang="de">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Lüftungsbau Meier – Klima- und Lüftungstechnik in Dortmund</title>
 
     <meta
       name="description"
-      content="Lüftungsbau Meier ist Ihr Fachbetrieb für Klima- und Lüftungstechnik in Dortmund. Planung, Montage, Wartung und Service für Gewerbe und private Haushalte."
+      content="Lüftungsbau Meier ist Ihr Fachbetrieb für Klima- und Lüftungstechnik in Dortmund. Planung, Montage, Wartung und Service für kleine Betriebe und private Haushalte."
     />
 
-    <!-- Open Graph für Social Media / Vorschau -->
     <meta
       property="og:title"
       content="Lüftungsbau Meier – Klima- und Lüftungstechnik"
     />
     <meta
       property="og:description"
-      content="Fachgerechte Installation, Wartung und Service von Klima- und Lüftungsanlagen in Dortmund & Umgebung."
+      content="Fachgerechte Planung, Installation und Wartung von Lüftungs- und Klimaanlagen in Dortmund und Umgebung."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.lueftungsbau-meier.de/" />
@@ -33,16 +32,17 @@
   </head>
 
   <body>
-    <header>
-      <div class="header-inner">
-        <div class="logo">
-          <span>Lüftungsbau Meier</span>
-          <span>Klima und Lüftungstechnik</span>
-        </div>
-        <nav>
-          <ul>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#start" class="logo">
+          <span class="logo-main">Lüftungsbau Meier</span>
+          <span class="logo-sub">Klima- und Lüftungstechnik in Dortmund</span>
+        </a>
+        <nav aria-label="Hauptnavigation">
+          <ul class="nav-list">
             <li><a href="#start" class="nav-link">Start</a></li>
             <li><a href="#leistungen" class="nav-link">Leistungen</a></li>
+            <li><a href="#vorteile" class="nav-link">Vorteile</a></li>
             <li><a href="#about" class="nav-link">Über uns</a></li>
             <li><a href="#kontakt" class="nav-link">Kontakt</a></li>
           </ul>
@@ -51,198 +51,375 @@
     </header>
 
     <main>
-      <!-- HERO -->
-      <section id="start" class="hero">
-        <div class="hero-inner">
-          <div class="hero-layout">
-            <div class="hero-image">
-              <div class="opening-times">
-                <strong>Öffnungszeiten</strong>
-                Mo–Fr: 8–18 Uhr<br />
-                Sa: 8–13 Uhr
-              </div>
-            </div>
+      <!-- Hero -->
+      <section id="start" class="hero" aria-labelledby="hero-heading">
+        <div class="container hero-inner">
+          <div class="hero-content">
+            <p class="hero-kicker">
+              Klima- und Lüftungstechnik für Betriebe in Dortmund
+            </p>
+            <h1 id="hero-heading" class="hero-heading">
+              Frische Luft für Ihre Arbeitsräume
+            </h1>
+            <p class="hero-text">
+              Lüftungsbau Meier plant, montiert und wartet Lüftungs- und
+              Klimaanlagen für kleine und mittlere Betriebe in Dortmund und
+              Umgebung. Auf Wunsch betreuen wir auch Wohnbereiche von Inhabern
+              und Mitarbeitenden.
+            </p>
+            <a href="#kontakt" class="btn-primary"> Jetzt Termin anfragen </a>
+          </div>
 
-            <div class="hero-text">
-              <div class="hero-sub">Der Winter steht vor der Tür</div>
-              <div class="hero-headline">
-                Denken Sie an<br />
-                <span>Ihre Lüftungs- und Klimaanlage</span>
-              </div>
-              <p class="hero-note">
-                Wir prüfen, warten und modernisieren Lüftungsanlagen für Gewerbe
-                und private Haushalte.
-              </p>
+          <div class="hero-side">
+            <div
+              class="hero-image"
+              role="img"
+              aria-label="Lüftungskanal und Technik im Gebäude"
+            ></div>
+            <div class="opening-box">
+              <p class="opening-title">Öffnungszeiten</p>
+              <p class="opening-line">Mo bis Fr: 8 bis 18 Uhr</p>
+              <p class="opening-line">Sa: 8 bis 13 Uhr</p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- KONTAKT (einfach) -->
-      <section id="kontakt" class="contact-section">
-        <h2>Kontakt</h2>
-        <p>Telefon: 0231 / 123456</p>
-        <p>E-Mail: info@lueftungsbau-meier.de</p>
-        <p>Adresse: Musterstraße 12, 44147 Dortmund</p>
+      <!-- Leistungen -->
+      <section
+        id="leistungen"
+        class="section section-light"
+        aria-labelledby="leistungen-heading"
+      >
+        <div class="container">
+          <h2 id="leistungen-heading" class="section-heading">
+            Unsere Leistungen auf einen Blick
+          </h2>
+
+          <div class="grid-services">
+            <article class="service-card">
+              <h3>Planung und Beratung</h3>
+              <p>
+                Wir analysieren Ihre Betriebsräume vor Ort und planen eine
+                passende Lüftungs- oder Klimaanlage, die zu Nutzung,
+                Vorschriften und Budget Ihres Unternehmens passt.
+              </p>
+            </article>
+
+            <article class="service-card">
+              <h3>Montage und Installation</h3>
+              <p>
+                Fachgerechter Einbau neuer Anlagen sowie Erweiterungen
+                bestehender Systeme – mit klaren Abläufen, abgestimmt auf Ihren
+                Betriebsalltag.
+              </p>
+            </article>
+
+            <article class="service-card">
+              <h3>Wartung und Reinigung</h3>
+              <p>
+                Regelmäßige Kontrolle, Reinigung und Filterwechsel sorgen für
+                zuverlässige Technik, ein gutes Raumklima und weniger Ausfälle
+                im Betrieb.
+              </p>
+            </article>
+
+            <article class="service-card">
+              <h3>24/7 Notdienst & Reparatur</h3>
+              <p>
+                Schnelle Hilfe bei Störungen und Ausfällen – auch außerhalb der
+                Geschäftszeiten. Ihr direkter Ansprechpartner für alle
+                technischen Fragen.
+              </p>
+            </article>
+          </div>
+        </div>
       </section>
 
-      <!-- LEISTUNGEN -->
-      <section id="leistungen" class="services-section">
-        <h2 class="services-title">Unsere Leistungen</h2>
+      <!-- Vorteile -->
+      <section id="vorteile" class="section" aria-labelledby="vorteile-heading">
+        <div class="container">
+          <h2 id="vorteile-heading" class="section-heading">
+            Ihre Vorteile mit Lüftungsbau Meier
+          </h2>
 
-        <div class="services-grid">
-          <div class="service-card">
-            <div class="service-icon">🛠</div>
-            <h3>Montage & Installation</h3>
+          <div class="grid-benefits">
+            <article class="benefit">
+              <h3>Direkter Ansprechpartner</h3>
+              <p>
+                Sie arbeiten mit einem lokalen Fachbetrieb aus Dortmund, der
+                Ihre Betriebsanforderungen kennt und ohne Umwege erreichbar ist.
+              </p>
+            </article>
+
+            <article class="benefit">
+              <h3>Saubere und zuverlässige Arbeit</h3>
+              <p>
+                Wir planen Einsätze so, dass Ihr Betrieb möglichst wenig gestört
+                wird, halten Absprachen ein und hinterlassen Arbeitsbereiche
+                sauber.
+              </p>
+            </article>
+
+            <article class="benefit">
+              <h3>Faire und transparente Preise</h3>
+              <p>
+                Sie erhalten ein verständliches Angebot mit klaren Positionen –
+                ideal für interne Freigaben und Budgetplanung.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Über uns -->
+      <section
+        id="about"
+        class="section section-light"
+        aria-labelledby="about-heading"
+      >
+        <div class="container about-inner">
+          <div>
+            <h2 id="about-heading" class="section-heading">
+              Über Lüftungsbau Meier
+            </h2>
             <p>
-              Professionelle Installation moderner Klima- und Lüftungssysteme.
+              Lüftungsbau Meier ist ein Fachbetrieb aus Dortmund mit Schwerpunkt
+              auf Klima- und Lüftungstechnik für kleine und mittlere
+              Unternehmen. Wir betreuen Büros, Werkstätten, Gastronomie und
+              andere Gewerbebetriebe vom ersten Gespräch bis zur fertigen
+              Anlage.
+            </p>
+            <p>
+              Neben Neuinstallationen übernehmen wir auch die Modernisierung und
+              Wartung bestehender Systeme. Dabei legen wir Wert auf persönliche
+              Beratung, klare Absprachen und handwerklich sauber ausgeführte
+              Arbeiten, die sich gut in Ihren Betriebsablauf einfügen.
             </p>
           </div>
 
-          <div class="service-card">
-            <div class="service-icon">🔧</div>
-            <h3>Wartung & Service</h3>
-            <p>Regelmäßige Überprüfung für Effizienz und lange Lebensdauer.</p>
+          <ul class="about-list">
+            <li>
+              Lüftungs- und Klimasysteme für Büros, Gastronomie und kleine
+              Betriebe
+            </li>
+            <li>
+              Lösungen, die zu Ihren Räumen, Auflagen und Arbeitsabläufen passen
+            </li>
+            <li>Schnelle Reaktion bei Fragen, Wartung und Störungen</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Kontakt -->
+      <section id="kontakt" class="section" aria-labelledby="kontakt-heading">
+        <div class="container contact-grid">
+          <div class="contact-info">
+            <h2 id="kontakt-heading" class="section-heading">
+              Kontakt und Beratungstermin
+            </h2>
+            <p>
+              Sie planen eine neue Lüftungsanlage oder benötigen Service für
+              bestehende Systeme? Kontaktieren Sie uns für ein unverbindliches
+              Beratungsgespräch vor Ort.
+            </p>
+
+            <p class="contact-line"><strong>Telefon:</strong> 0231 / 123456</p>
+            <p class="contact-line">
+              <strong>E-Mail:</strong> info@lueftungsbau-meier.de
+            </p>
+            <p class="contact-line">
+              <strong>Adresse:</strong> Musterstraße 12, 44147 Dortmund
+            </p>
+            <p class="contact-note">
+              Telefonisch erreichen Sie uns in der Regel von Montag bis Freitag
+              zwischen 8 und 18 Uhr.
+            </p>
           </div>
 
-          <div class="service-card">
-            <div class="service-icon">📐</div>
-            <h3>Planung & Beratung</h3>
-            <p>Individuelle Konzeption für Neubau, Umbau und Modernisierung.</p>
-          </div>
+          <div class="contact-form-wrapper">
+            <form
+              class="contact-form"
+              action="backend/kontakt.php"
+              method="post"
+              novalidate
+            >
+              <div class="form-field">
+                <label for="name">Ihr Name *</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  autocomplete="name"
+                />
+              </div>
 
-          <div class="service-card">
-            <div class="service-icon">🏢</div>
-            <h3>Gewerbeanlagen</h3>
-            <p>Großanlagen, Filtersysteme und maßgeschneiderte Lösungen.</p>
+              <div class="form-field">
+                <label for="email">Ihre E-Mail-Adresse *</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  autocomplete="email"
+                />
+              </div>
+
+              <div class="form-field">
+                <label for="message">Ihre Nachricht *</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+
+              <p class="form-hint">
+                Mit dem Absenden stimmen Sie zu, dass wir Ihre Angaben zur
+                Bearbeitung Ihrer Anfrage verwenden. Weitere Informationen
+                finden Sie in der Datenschutzerklärung.
+              </p>
+
+              <button type="submit" class="btn-primary">
+                Nachricht senden
+              </button>
+            </form>
           </div>
         </div>
       </section>
 
-      <!-- ÜBER UNS (gekürzt & simpel) -->
-      <section id="about" class="about-section">
-        <h2>Über uns</h2>
-        <p>
-          Lüftungsbau Meier ist ein lokaler Fachbetrieb aus Dortmund mit Fokus
-          auf Lüftungs- und Klimatechnik. Wir betreuen kleine Betriebe und
-          private Haushalte – von der ersten Anfrage bis zur fertigen Anlage.
-        </p>
-        <ul>
-          <li>Saubere, fachgerechte Installation</li>
-          <li>Klare Absprachen und faire Preise</li>
-          <li>Schnelle Erreichbarkeit bei Fragen</li>
-        </ul>
+      <!-- Rechtliches -->
+      <footer class="site-footer">
+        <div class="container footer-top">
+          <div class="footer-block">
+            <h3>Lüftungsbau Meier</h3>
+            <p>
+              Ihr Partner für gewerbliche Lüftungs- und Klimatechnik in Dortmund
+              und Umgebung
+            </p>
+          </div>
+
+          <div class="footer-block">
+            <h3>Kontakt</h3>
+            <p>Telefon: 0231 / 123456</p>
+            <p>E-Mail: info@lueftungsbau-meier.de</p>
+          </div>
+
+          <div class="footer-block">
+            <h3>Rechtliches</h3>
+            <p><a href="#impressum">Impressum</a></p>
+            <p><a href="#datenschutz">Datenschutzerklärung</a></p>
+          </div>
+
+          <div class="footer-block">
+            <h3>Erstellt von</h3>
+            <p>Pixelmensch – Webdesign und Entwicklung</p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2024 Lüftungsbau Meier – Alle Rechte vorbehalten</p>
+        </div>
+      </footer>
+
+      <!-- Impressum und Datenschutz als eigene Sektionen -->
+
+      <section id="impressum" class="legal-section" aria-labelledby="imp-head">
+        <div class="container">
+          <h2 id="imp-head">Impressum</h2>
+          <p>
+            <strong>Max Meier</strong><br />
+            Musterstraße 12<br />
+            44147 Dortmund
+          </p>
+          <p>
+            Telefon: 0231 / 123456<br />
+            E-Mail: info@lueftungsbau-meier.de
+          </p>
+          <p><strong>Kleinunternehmer gemäß §19 UStG</strong></p>
+        </div>
+      </section>
+
+      <section
+        id="datenschutz"
+        class="legal-section legal-section-last"
+        aria-labelledby="ds-head"
+      >
+        <div class="container">
+          <h2 id="ds-head">Datenschutzerklärung</h2>
+          <h2>Datenschutzerklärung</h2>
+
+          <p><strong>1. Allgemeine Hinweise</strong></p>
+          <p>
+            Der Schutz Ihrer persönlichen Daten ist uns wichtig. Auf dieser
+            Website werden personenbezogene Daten nur im technisch notwendigen
+            Umfang erhoben. Wir behandeln Ihre Daten vertraulich und
+            entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser
+            Datenschutzerklärung.
+          </p>
+
+          <p><strong>2. Verantwortlicher</strong></p>
+          <p>
+            Lüftungsbau Meier<br />
+            Inhaber: Max Meier<br />
+            Musterstraße 12<br />
+            44147 Dortmund<br />
+            Telefon: 0231 / 123456<br />
+            E-Mail: info@lueftungsbau-meier.de
+          </p>
+
+          <p><strong>Zugriffsdaten / Server-Logfiles</strong></p>
+          <p>
+            Der Provider dieser Website erhebt und speichert automatisch
+            Informationen in sogenannten Server-Logfiles, die Ihr Browser
+            automatisch übermittelt. Dies sind:
+          </p>
+          <ul>
+            <li>Browsertyp und Browserversion</li>
+            <li>verwendetes Betriebssystem</li>
+            <li>Referrer URL</li>
+            <li>Hostname des zugreifenden Rechners</li>
+            <li>Uhrzeit der Serveranfrage</li>
+            <li>IP-Adresse (gekürzt oder anonymisiert)</li>
+          </ul>
+          <p>
+            Diese Daten sind nicht bestimmten Personen zuordenbar. Eine
+            Zusammenführung dieser Daten mit anderen Datenquellen erfolgt nicht.
+          </p>
+
+          <p><strong>Kontaktaufnahme per E-Mail oder Telefon</strong></p>
+          <p>
+            Wenn Sie uns per E-Mail oder Telefon kontaktieren, werden die von
+            Ihnen übermittelten Daten zwecks Bearbeitung der Anfrage bei uns
+            gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung
+            weiter.
+          </p>
+
+          <p><strong>Keine Cookies / kein Tracking</strong></p>
+          <p>
+            Diese Website verwendet keine eigenen Tracking-Cookies. Der
+            Hostinganbieter kann technisch notwendige Cookies zur sicheren
+            Darstellung der Seite setzen.
+          </p>
+
+          <p><strong>Ihre Rechte</strong></p>
+          <p>
+            Sie haben das Recht auf Auskunft über Ihre gespeicherten
+            personenbezogenen Daten, deren Berichtigung, Löschung, Einschränkung
+            der Verarbeitung sowie ein Recht auf Datenübertragbarkeit. Außerdem
+            steht Ihnen ein Recht auf Widerspruch gegen die Verarbeitung zu.
+          </p>
+
+          <p><strong>Beschwerderecht</strong></p>
+          <p>
+            Sie haben das Recht, sich bei einer Datenschutzaufsichtsbehörde zu
+            beschweren, wenn Sie der Ansicht sind, dass die Verarbeitung Ihrer
+            personenbezogenen Daten rechtswidrig erfolgt.
+          </p>
+        </div>
       </section>
     </main>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-      <div class="footer-inner">
-        <div class="footer-section">
-          <h3>Lüftungsbau Meier</h3>
-          <p>Fachbetrieb für Lüftungs- und Klimatechnik</p>
-        </div>
-
-        <div class="footer-section">
-          <h4>Kontakt</h4>
-          <p>Telefon: 0231 / 123456</p>
-          <p>E-Mail: info@lueftungsbau-meier.de</p>
-        </div>
-
-        <div class="footer-section">
-          <h4>Rechtliches</h4>
-          <a href="#impressum">Impressum</a><br />
-          <a href="#datenschutz">Datenschutz</a>
-        </div>
-
-        <div class="footer-section">
-          <h4>Erstellt von</h4>
-          <p>Pixelmensch<br />Webdesign & Entwicklung</p>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        © 2024 Lüftungsbau Meier – Alle Rechte vorbehalten
-      </div>
-    </footer>
-
-    <!-- IMPRESSUM -->
-    <section id="impressum" class="legal-section">
-      <h2>Impressum</h2>
-      <p><strong>Max Meier</strong><br />Musterstraße 12, 44147 Dortmund</p>
-      <p>Telefon: 0231 / 123456<br />Email: info@lueftungsbau-meier.de</p>
-      <p><strong>Kleinunternehmer gemäß §19 UStG</strong></p>
-    </section>
-
-    <!-- DATENSCHUTZ -->
-    <section id="datenschutz" class="legal-section">
-      <h2>Datenschutzerklärung</h2>
-
-      <p><strong>1. Allgemeine Hinweise</strong></p>
-      <p>
-        Der Schutz Ihrer persönlichen Daten ist uns wichtig. Auf dieser Website
-        werden personenbezogene Daten nur im technisch notwendigen Umfang
-        erhoben. Wir behandeln Ihre Daten vertraulich und entsprechend der
-        gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.
-      </p>
-
-      <p><strong>2. Verantwortlicher</strong></p>
-      <p>
-        Lüftungsbau Meier<br />
-        Inhaber: Max Meier<br />
-        Musterstraße 12<br />
-        44147 Dortmund<br />
-        Telefon: 0231 / 123456<br />
-        E-Mail: info@lueftungsbau-meier.de
-      </p>
-
-      <p><strong>3. Zugriffsdaten / Server-Logfiles</strong></p>
-      <p>
-        Der Provider dieser Website erhebt und speichert automatisch
-        Informationen in sogenannten Server-Logfiles, die Ihr Browser
-        automatisch übermittelt. Dies sind:
-      </p>
-      <ul>
-        <li>Browsertyp und Browserversion</li>
-        <li>verwendetes Betriebssystem</li>
-        <li>Referrer URL</li>
-        <li>Hostname des zugreifenden Rechners</li>
-        <li>Uhrzeit der Serveranfrage</li>
-        <li>IP-Adresse (gekürzt oder anonymisiert)</li>
-      </ul>
-      <p>
-        Diese Daten sind nicht bestimmten Personen zuordenbar. Eine
-        Zusammenführung dieser Daten mit anderen Datenquellen erfolgt nicht.
-      </p>
-
-      <p><strong>4. Kontaktaufnahme per E-Mail oder Telefon</strong></p>
-      <p>
-        Wenn Sie uns per E-Mail oder Telefon kontaktieren, werden die von Ihnen
-        übermittelten Daten zwecks Bearbeitung der Anfrage bei uns gespeichert.
-        Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.
-      </p>
-
-      <p><strong>5. Keine Cookies / kein Tracking</strong></p>
-      <p>
-        Diese Website verwendet keine eigenen Tracking-Cookies. Der
-        Hostinganbieter kann technisch notwendige Cookies zur sicheren
-        Darstellung der Seite setzen.
-      </p>
-
-      <p><strong>6. Ihre Rechte</strong></p>
-      <p>
-        Sie haben das Recht auf Auskunft über Ihre gespeicherten
-        personenbezogenen Daten, deren Berichtigung, Löschung, Einschränkung der
-        Verarbeitung sowie ein Recht auf Datenübertragbarkeit. Außerdem steht
-        Ihnen ein Recht auf Widerspruch gegen die Verarbeitung zu.
-      </p>
-
-      <p><strong>7. Beschwerderecht</strong></p>
-      <p>
-        Sie haben das Recht, sich bei einer Datenschutzaufsichtsbehörde zu
-        beschweren, wenn Sie der Ansicht sind, dass die Verarbeitung Ihrer
-        personenbezogenen Daten rechtswidrig erfolgt.
-      </p>
-    </section>
   </body>
 </html>
