@@ -26,9 +26,66 @@
       content="https://www.lueftungsbau-meier.de/Bilder/lueftung1.jpg"
     />
 
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Lüftungsbau Meier – Klima- und Lüftungstechnik" />
+    <meta name="twitter:description" content="Fachgerechte Planung, Installation und Wartung von Lüftungs- und Klimaanlagen in Dortmund und Umgebung." />
+    <meta name="twitter:image" content="https://www.lueftungsbau-meier.de/Bilder/lueftung1.jpg" />
+
+    <!-- Schema.org LocalBusiness Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Lüftungsbau Meier",
+      "description": "Fachbetrieb für Klima- und Lüftungstechnik in Dortmund",
+      "url": "https://www.lueftungsbau-meier.de/",
+      "logo": "https://www.lueftungsbau-meier.de/Bilder/favicon.png",
+      "image": "https://www.lueftungsbau-meier.de/Bilder/lueftung1.jpg",
+      "telephone": "+49-231-123456",
+      "email": "info@lueftungsbau-meier.de",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Musterstraße 12",
+        "addressLocality": "Dortmund",
+        "postalCode": "44147",
+        "addressCountry": "DE"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "51.5136",
+        "longitude": "7.4653"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "08:00",
+          "closes": "18:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "08:00",
+          "closes": "13:00"
+        }
+      ],
+      "priceRange": "€€",
+      "areaServed": {
+        "@type": "City",
+        "name": "Dortmund"
+      },
+      "sameAs": [
+        "https://www.facebook.com/lueftungsbaumeier",
+        "https://www.instagram.com/lueftungsbaumeier"
+      ]
+    }
+    </script>
+
     <link rel="icon" href="Bilder/favicon.png" type="image/png" />
 
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
   </head>
 
   <body>
@@ -244,6 +301,12 @@
               method="post"
               novalidate
             >
+              <!-- Honeypot-Feld (unsichtbar für echte Nutzer) -->
+              <input type="text" name="firma" style="position:absolute;left:-9999px;" tabindex="-1" autocomplete="off" aria-hidden="true" />
+              
+              <!-- CSRF-Token -->
+              <input type="hidden" name="csrf_token" id="csrf_token" value="" />
+              
               <div class="form-field">
                 <label for="name">Ihr Name *</label>
                 <input
@@ -349,7 +412,6 @@
       >
         <div class="container">
           <h2 id="ds-head">Datenschutzerklärung</h2>
-          <h2>Datenschutzerklärung</h2>
 
           <p><strong>1. Allgemeine Hinweise</strong></p>
           <p>

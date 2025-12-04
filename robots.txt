@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Wichtige Seiten
+Sitemap: https://www.lueftungsbau-meier.de/sitemap.xml
+
+# Keine Indizierung von Backend-Dateien
+Disallow: /backend/
+
+# Crawl-Delay für Bots
+Crawl-delay: 1

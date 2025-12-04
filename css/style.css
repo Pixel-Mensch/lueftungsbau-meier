@@ -184,6 +184,7 @@ textarea:focus-visible {
   background-image: url("../Bilder/lueftung1.jpg");
   background-size: cover;
   background-position: center;
+  loading: lazy;
 }
 
 .hero-image::after {
@@ -379,6 +380,50 @@ textarea {
   font-size: 12px;
   color: var(--text-muted);
   margin: 0 0 4px;
+}
+
+/* Formular-Validierung */
+
+input.error,
+textarea.error {
+  border-color: var(--accent-red);
+}
+
+.btn-primary.loading {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.form-message {
+  padding: 12px 14px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  line-height: 1.5;
+  transition: opacity 0.3s ease;
+}
+
+.form-message-success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.form-message-error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+/* Navigation Active State */
+
+.nav-link.active {
+  color: var(--accent-red);
+  font-weight: 600;
+}
+
+.nav-link.active::after {
+  width: 100%;
 }
 
 /* Footer */

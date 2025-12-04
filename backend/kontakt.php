@@ -1,12 +1,37 @@
 <?php
 // Einfaches Kontaktformular-Skript für Lüftungsbau Meier
 
+// Session starten für CSRF-Schutz und Rate Limiting
+session_start();
+
 // Ich beende das Script sofort, falls es kein POST-Request ist
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     http_response_code(405);
     echo "Ungültige Anfrage.";
     exit;
 }
+
+// CSRF-Token Validierung
+if (!isset($_POST['csrf_token']) || !isset($_SESSION['csrf_token']) || $_POST['csrf_token'] !== $_SESSION['csrf_token']) {
+    http_response_code(403);
+    echo "Sicherheitstoken ungültig. Bitte laden Sie die Seite neu.";
+    exit;
+}
+
+// Rate Limiting: Max. 3 Anfragen pro 10 Minuten
+if (!isset($_SESSION['last_submit_times'])) {
+    $_SESSION['last_submit_times'] = [];
+}
+$now = time();
+$_SESSION['last_submit_times'] = array_filter($_SESSION['last_submit_times'], function($time) use ($now) {
+    return $time > ($now - 600); // Letzte 10 Minuten
+});
+if (count($_SESSION['last_submit_times']) >= 3) {
+    http_response_code(429);
+    echo "Zu viele Anfragen. Bitte versuchen Sie es in einigen Minuten erneut.";
+    exit;
+}
+$_SESSION['last_submit_times'][] = $now;
 
 // Honeypot: wenn dieses Feld ausgefüllt ist, breche ich ab (Spam)
 if (!empty($_POST['firma'] ?? '')) {
@@ -87,5 +112,4 @@ if (@mail($empfaenger, $betreff, $nachricht, $header)) {
 </body>
 </html>";
 }
-?>
 ?>
